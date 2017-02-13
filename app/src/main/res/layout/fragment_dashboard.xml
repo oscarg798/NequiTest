@@ -6,6 +6,12 @@
     tools:context=".presentation.fragments.DashboardFragment">
 
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_main_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab_money_use"
         android:layout_width="wrap_content"
