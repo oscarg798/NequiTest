@@ -3,6 +3,7 @@ package co.com.bancolombia.nequi.presentation.fragments;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +17,8 @@ public class DashboardFragment extends BaseFragment {
     private FloatingActionButton mFABMoneyUse;
 
     private FloatingActionButton mFABX;
+
+    private RecyclerView mRVMainButtons;
 
     public DashboardFragment() {
         // Required empty public constructor
@@ -51,6 +54,7 @@ public class DashboardFragment extends BaseFragment {
         super.initViewComponents(view);
         mFABMoneyUse = (FloatingActionButton) view.findViewById(R.id.fab_money_use);
         mFABX = (FloatingActionButton) view.findViewById(R.id.fab_x);
+        mRVMainButtons = (RecyclerView) view.findViewById(R.id.rv_main_buttons);
 
         mFABMoneyUse.setOnClickListener(new View.OnClickListener() {
             @Override
